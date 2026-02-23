@@ -6,7 +6,7 @@
 
 ## 🚀 Live Portfolio & Resume
 **View my full interactive portfolio and specialized networking frameworks here:**
-👉 **[jonathonpmitchell.github.io](https://jonmitchell557.github.io)**
+👉 **[jonathonpmitchell.github.io](https://jonathonpmitchell.github.io)**
 
 ---
 
