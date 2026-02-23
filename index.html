@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathon P. Mitchell | Unity Systems Consultant</title>
+    <!-- Professional, clean CSS framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
+    <style>
+        body { 
+            max-width: 950px; 
+            margin: auto; 
+            padding: 30px; 
+            line-height: 1.6; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        header { 
+            text-align: center; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 30px; 
+            margin-bottom: 40px; 
+        }
+        .contact-info { 
+            font-size: 1.1em; 
+            color: #555; 
+            margin-top: 10px;
+        }
+        .badge-container {
+            margin-top: 20px;
+        }
+        .badge { 
+            background: #007bff; 
+            color: white; 
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            font-weight: bold; 
+            margin: 5px;
+            display: inline-block;
+        }
+        .service-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .service-card { 
+            background: #fdfdfd; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-left: 6px solid #007bff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .gist-container { 
+            margin: 50px 0; 
+            padding: 25px; 
+            background: #ffffff; 
+            border: 1px solid #e1e4e8; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .gist-container h3 {
+            margin-top: 0;
+            color: #24292e;
+        }
+        h2 { 
+            color: #007bff; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        h3 { 
+            margin-bottom: 10px; 
+            color: #333; 
+        }
+        .achievement-item { 
+            margin-bottom: 15px; 
+            font-size: 1em; 
+            padding-left: 20px;
+            text-indent: -20px;
+        }
+        .achievement-item strong {
+            color: #0056b3;
+        }
+        footer { 
+            text-align: center; 
+            margin-top: 80px; 
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            font-style: italic; 
+            color: #777; 
+        }
+        @media (max-width: 600px) {
+            .service-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jonathon P. Mitchell</h1>
+    <div class="contact-info">
+        Richland, WA | (509) 554-4140 | <a href="mailto:jonmitchellsemail@gmail.com">jonmitchellsemail@gmail.com</a>
+    </div>
+    <div class="badge-container">
+        <span class="badge">8+ Years Unity Expert</span>
+        <span class="badge">Netcode (NGO) Specialist</span>
+        <span class="badge">Eagle Scout</span>
+        <span class="badge">VR/XR Architect</span>
+    </div>
+</header>
+
+<section id="summary">
+    <h2>Technical Consulting Summary</h2>
+    <p>
+        <strong>Unity Networking & Performance Specialist</strong> with 8+ years of experience resolving complex architectural bottlenecks in Netcode for GameObjects (NGO) and VR/XR. Expert in deploying high-performance, Burst-compiled solutions for multiplayer synchronization and physics. 
+    </p>
+    <p>
+        <strong>Available for high-impact, short-term contracts (5–10 hours/week)</strong> to audit, fix, and optimize existing codebases for immediate production readiness.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Specialized Service Offerings</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <h3>Multiplayer "Lag-Fix" Audits</h3>
+            <p>Eliminating frame-time spikes by overriding default Netcode spawn pipelines with custom, high-efficiency Object Pooling (INetworkPrefabInstanceHandler).</p>
+        </div>
+        <div class="service-card">
+            <h3>Deterministic Physics Integration</h3>
+            <p>Implementing Unity Jobs-based raycasting and projectile systems to ensure 100% hit-detection accuracy in fast-paced, high-density networked environments.</p>
+        </div>
+        <div class="service-card">
+            <h3>VR Performance Optimization</h3>
+            <p>Reducing heap fragmentation and CPU overhead through Zero-GC programming, DOTS, and data-oriented architectural design.</p>
+        </div>
+        <div class="service-card">
+            <h3>Command & Control Frameworks</h3>
+            <p>Designing synchronized AI and formation systems for large-scale networked environments, featuring algorithmic spatial distribution.</p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Consulting Experience & Select Achievements</h2>
+    <div style="margin-bottom: 30px;">
+        <h3>Lead Systems Architect | Slightly Artistic LLC</h3>
+        <p><em>Remote | 2018 – Present</em></p>
+        
+        <div class="achievement-item"><strong>Solved Network Sync Issues:</strong> Developed a proprietary NetworkObjectPoolManager reducing heap allocations by 90%, directly addressing "spawn lag" in Unity Netcode.</div>
+        <div class="achievement-item"><strong>High-Density Simulation:</strong> Engineered a deterministic projectile system using Unity Jobs/Burst, simulating 500+ active entities with &lt;1ms main-thread cost.</div>
+        <div class="achievement-item"><strong>Bandwidth Optimization:</strong> Engineered custom bitpacking and data compression algorithms to sync complex 3D states, reducing network packet sizes by &gt;60%.</div>
+        <div class="achievement-item"><strong>Optimized Batch Networking:</strong> Engineered a priority-based staggered sync system leveraging distance-culling and custom serialization to reduce spatial network traffic by &gt;70%.</div>
+        <div class="achievement-item"><strong>Advanced Latency Compensation:</strong> Engineered a custom client-side prediction and server reconciliation framework for Unity Netcode, featuring Input Replay and state rewinding.</div>
+        <div class="achievement-item"><strong>Deterministic State Sync:</strong> Developed tick-accurate state buffers and reconciliation logic to maintain authoritative gameplay without sacrificing responsiveness.</div>
+        <div class="achievement-item"><strong>Optimized Ragdoll Systems:</strong> Engineered a high-performance, networked ragdoll controller featuring layer-based physics sleeping and automated freezing logic.</div>
+        <div class="achievement-item"><strong>VR Maritime Simulation:</strong> Integrated vertex-level water physics and Inverse Kinematics for hyper-realistic VR interaction in networked sea states.</div>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h3>Technical Consultant | Independent</h3>
+        <p><em>Remote | 2020 – Present</em></p>
+        <div class="achievement-item"><strong>Technical Audit:</strong> Performs deep-dive code reviews for college-level and indie projects, resolving critical architectural flaws in C# and Python logic.</div>
+    </div>
+</section>
+
+<section id="toolkit">
+    <h2>Core Toolkit</h2>
+    <p>
+        <strong>Engine:</strong> Unity (Expert), Netcode for GameObjects (NGO).<br>
+        <strong>Performance:</strong> Burst Compiler, C# Job System, NativeArrays, Memory Management, Profiling.<br>
+        <strong>Physics:</strong> Deterministic Raycasting, Inverse Kinematics, Water Physics, Aerodynamics, Ballistics.<br>
+        <strong>Tools:</strong> Git, ScriptableObject Architectures, NaughtyAttributes, RootMotion.
+    </p>
+</section>
+
+<section id="portfolio">
+    <h2>Technical Portfolio (Live Gist Samples)</h2>
+    <p><em>The following live embeds demonstrate low-level architectural competence in Unity C#.</em></p>
+    
+    <div class="gist-container">
+        <h3>1. Optimized Batch Transform and Animation Networking (Bit-Packing)</h3>
+        <p>Demonstrates manual struct layout and bit-stream compression for high-density synchronization.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/9766119dbf2e5c7727127d6f13322696.js"></script>
+    </div>
+
+    <div class="gist-container">
+        <h3>2. Client-Side Prediction & Reconciliation</h3>
+        <p>Tick-accurate state buffers and server-authoritative replay logic for lag compensation.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/9ae2ccc4c3b23da48a01e3527ac42352.js"></script>
+    </div>
+
+    <div class="gist-container">
+        <h3>3. Deterministic Projectile System (Jobs/Burst)</h3>
+        <p>Parallelized physics simulation using NativeArrays and the Burst compiler for massive entity counts.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/f76298f7f5d255f641f16f3c259a328a.js"></script>
+    </div>
+
+    <div class="gist-container">
+        <h3>4. Optimized Ragdoll Lifecycle</h3>
+        <p>Manual physics lifecycle management including layer-based sleeping and serialization.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/4f4e2d235014c20e8e065102461ead5a.js"></script>
+    </div>
+
+    <div class="gist-container">
+        <h3>5. NPC Command & Formation Tool</h3>
+        <p>Algorithmic spatial distribution and formation logic for networked AI units.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/082eaa71967f7d26eeb1ea321154c993.js"></script>
+    </div>
+
+    <div class="gist-container">
+        <h3>6. Bit-Packed Ballistics Engine</h3>
+        <p>Manual 64-bit coordinate packing and multi-threaded trajectory solving logic.</p>
+        <!-- REPLACE THE LINE BELOW WITH YOUR GIST EMBED SCRIPT -->
+        <script src="https://gist.github.com/jonmitchell557/3a9ee11f8a618d9e058969f2f9da56e9.js"></script>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Awards & Education</h2>
+    <ul>
+        <li><strong>Eagle Scout:</strong> Disciplined, high-integrity work ethic suitable for remote solo-troubleshooting and leadership.</li>
+        <li><strong>Washington State University:</strong> B.S. Computer Science (Software Design Specialization).</li>
+        <li><strong>Certifications:</strong> CERT Certified (Citizen Emergency Response Training), First Aid Certified.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Ready to solve your architectural bottlenecks. Available for 5–10 hours per week.</p>
+    <p>Direct inquiries to <a href="mailto:jonmitchellsemail@gmail.com">jonmitchellsemail@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
+
